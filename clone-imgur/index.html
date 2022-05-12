@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Topdiv">
+            <div class="topnav" id="myTopnav">
+                <div class="navdiv1">
+              <img class="mainlogo" src="./pic/img.png" alt="" />
+              <a href="#home" class="active"
+                ><button class="button">
+                  <img
+                    src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg"
+                    alt=""
+                  />New Post
+                </button></a
+              ></div>
+              <div class="search_box">
+              <a href="#search"
+                ><input class="search" type="text" placeholder="Images, #tags, @users oh my!"
+              /></a>
+          </div>
+              <div class="navdiv3">
+              <a href="#badge"><img class="badge" src="./pic/badge1.png" alt="" /></a>
+              <a href="#adfree"><button class="ad">Go Ad free</button></a>
+              <button class="button">Signin</button>
+              <button class="button">Sign up</button>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            <div class="Text">
+              Life is ten percent what happens to you and ninety percent memes.
+            </div>
+            <div class="trend">
+              <div class="trend1">
+                <span>EXPLORE TAGS</span>
+                <span>MORE TAGS+</span>
+              </div>
+              <div class="trend2">
+                <div>
+                  <img src="./pic/sci.PNG" alt="" />
+                </div>
+                <div>
+                  <img src="./pic/arch.PNG" alt="" />
+                </div>
+                <div><img src="./pic/dog.PNG" alt="" /></div>
+                <div><img src="./pic/otters.PNG" alt="" /></div>
+                <div><img src="./pic/aww.PNG" alt="" /></div>
+                <div><img src="./pic/meme.PNG" alt="" /></div>
+                <div><img src="./pic/gamiing.PNG" alt="" /></div>
+                <div><img src="./pic/funny.PNG" alt="" /></div>
+                <div><img src="./pic/awesome.PNG" alt="" /></div>
+              </div>
+            </div>
+          </div>
+          <div id="main">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+         </div>
+    </div>
+   
+</body>
+</html>
+<script type="module">
+    import {callapi2, callapi , appendData , appendData2} from'./index.js';
+    var data = await callapi();
+    var data2 = await callapi2()
+  var body = document.getElementById("first");
+  var body1 = document.getElementById("second");
+  var body2 = document.getElementById("third")
+  var show = appendData(data,body)
+  var show = appendData2(data2,body1)
+  var show = appendData(data,body2)
+
+</script>
