@@ -1,5 +1,4 @@
 
-import './App.css';
 import CalculatorTitle from './components/calculatorTitle';
 import OutputScreen from './components/outputScreen';
 import Button from './components/button';
