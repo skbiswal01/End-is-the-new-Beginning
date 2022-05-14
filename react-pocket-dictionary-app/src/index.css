@@ -1,0 +1,30 @@
+.dark-theme{
+  color: white;
+  background-color: #000;
+}
+.li{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20% ;
+}
+.extra{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media (min-width: 300px) and (max-width: 575px) {
+  .li{
+      display: grid;
+      grid-template-columns: auto auto;
+  }
+  input{
+    width: 50%;
+  }
+}
+@media (min-width: 576px) and (max-width: 690px) {
+  .li{
+      display: grid;
+      grid-template-columns: auto auto auto;
+  }
+}
